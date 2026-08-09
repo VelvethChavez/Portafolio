@@ -1,6 +1,4 @@
-/* =====================================================
-   CONFIGURACIÓN GENERAL
-   ===================================================== */
+/* Configuracion general*/
 
 * {
     margin: 0;
@@ -15,14 +13,11 @@ body {
 }
 
 
-/* =====================================================
-   CONTENEDOR PRINCIPAL
-   ===================================================== */
+/* Contenedor proncipal */
 
 .contenedor {
     width: 100%;
     min-height: 100vh;
-
     background-image:
         linear-gradient(
             #050613,
@@ -30,22 +25,14 @@ body {
             #1C2541
         ),
         url(imgPrueba.png);
-
     background-size: cover;
     background-position: center;
 }
 
-
-/* =====================================================
-   HEADER
-   ===================================================== */
-
 header {
     width: 100%;
     max-width: 1200px;
-
     margin: auto;
-
     padding: 25px 0;
 }
 
@@ -55,42 +42,22 @@ nav {
     align-items: center;
 }
 
-
-/* =====================================================
-   LOGO
-   ===================================================== */
-
 .logo {
     color: #1DE9FF;
-
     font-size: 20px;
     font-weight: bold;
-
     cursor: pointer;
 }
-
-
-/* =====================================================
-   PARTE DERECHA DEL NAV
-   ===================================================== */
 
 .nav-derecha {
     display: flex;
     align-items: center;
-
     gap: 40px;
 }
 
-
-/* =====================================================
-   MENÚ
-   ===================================================== */
-
 .menu {
     display: flex;
-
     list-style: none;
-
     gap: 35px;
 }
 
@@ -100,11 +67,8 @@ nav {
 
 .menu a {
     color: white;
-
     text-decoration: none;
-
     font-size: 15px;
-
     transition: 0.3s;
 }
 
@@ -113,105 +77,69 @@ nav {
 }
 
 
-/* =====================================================
-   BOTÓN CONTACTO
-   ===================================================== */
-
 .btn-contacto {
     text-decoration: none;
-
     color: #1DE9FF;
-
     border: 1px solid #1DE9FF;
-
     padding: 10px 20px;
-
     border-radius: 30px;
-
     font-size: 15px;
-
     font-weight: bold;
-
     transition: 0.3s;
 }
 
 .btn-contacto:hover {
     background: #1DE9FF;
-
     color: #0B0F1A;
 }
 
 
-/* =====================================================
-   MAIN
-   ===================================================== */
 
 main {
     width: 1200px;
     max-width: calc(100% - 80px);
-
     margin: 0 auto;
-
-    min-height: calc(100vh - 90px);
-
     display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    gap: 50px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
 }
 
-
-/* =====================================================
-   INFORMACIÓN PERSONAL
-   ===================================================== */
+.inicio {
+    width: 100%;
+    min-height: calc(100vh - 90px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
 
 .info {
     width: 430px;
     flex-shrink: 0;
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: center;
-
     align-items: flex-start;
-
     gap: 22px;
 }
 
 
-/* =====================================================
-   TEXTO "HOLA SOY"
-   ===================================================== */
 
 .info .welcome {
     color: #ffffff;
-
     width: fit-content;
-
     font-size: 28px;
 }
 
-
-/* =====================================================
-   NOMBRE
-   ===================================================== */
-
 .info h1 {
     font-size: 85px;
-
     line-height: 1.05;
-
     color: #ffffff;
 }
 
 .info h1 span {
     display: block;
-
     background:
         linear-gradient(
             90deg,
@@ -219,54 +147,29 @@ main {
             #60A5FA,
             #A855F7
         );
-
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     background-clip: text;
 }
 
 
-/* =====================================================
-   DESCRIPCIÓN
-   ===================================================== */
-
 .tag-role {
     color: #FFFFFF;
-
     font-size: 18px;
-
     line-height: 1.6;
-
     max-width: 350px;
 }
 
-
-/* =====================================================
-   CARRERA
-   ===================================================== */
 
 .Carrera {
     color: #1DE9FF;
 }
 
-
-/* =====================================================
-   BOTONES
-   ===================================================== */
-
 .action {
     display: flex;
-
     align-items: center;
-
     gap: 10px;
 }
-
-
-/* =====================================================
-   BOTÓN VER PROYECTOS
-   ===================================================== */
 
 .btnverproyecto {
     background:
@@ -278,38 +181,20 @@ main {
         );
 
     color: #FFFFFF;
-
     border: none;
-
     padding: 14px 14px;
-
     border-radius: 50px;
-
     font-size: 12px;
-
     font-weight: bold;
-
     cursor: pointer;
-
     transition: all 0.35s ease;
-
-    box-shadow:
-        0 8px 15px rgba(34, 211, 238, 0.35);
+    box-shadow:0 8px 15px rgba(34, 211, 238, 0.35);
 }
 
 .btnverproyecto:hover {
     transform: translateY(-4px);
-
-    background:
-        linear-gradient(
-            90deg,
-            #3B82F6,
-            #60A5FA,
-            #22D3EE
-        );
-
-    box-shadow:
-        0 12px 35px rgba(34, 211, 238, 0.55);
+    background: linear-gradient( 90deg, #3B82F6, #60A5FA, #22D3EE );
+    box-shadow:0 12px 35px rgba(34, 211, 238, 0.55);
 }
 
 .btnverproyecto:active {
@@ -317,68 +202,39 @@ main {
 }
 
 
-/* =====================================================
-   BOTÓN CV
-   ===================================================== */
-
 .btncv {
     text-decoration: none;
-
     background-color: transparent;
-
     color: #FFFFFF;
-
     border: 1px solid #FFFFFF;
-
     padding: 10px 20px;
-
     border-radius: 30px;
-
     font-size: 15px;
-
     font-weight: bold;
-
     cursor: pointer;
-
     transition: 0.3s;
 }
 
 .btncv:hover {
     color: #1C2541;
-
     transform: translateY(-4px);
-
     background: #ffffff;
-
-    box-shadow:
-        0 12px 20px rgba(181, 235, 243, 0.55);
+    box-shadow: 0 12px 20px rgba(181, 235, 243, 0.55);
 }
 
 .btncv:active {
     transform: scale(0.97);
 }
 
-
-/* =====================================================
-   PANTALLA DE CÓDIGO
-   ===================================================== */
-
 .pantalla {
     position: relative;
-
     width: 500px;
     height: 325px;
-
     flex-shrink: 1;
-
     background: #080d13;
-
     border: 1px solid #12354b;
-
     border-radius: 12px;
-
     overflow: hidden;
-
     box-shadow:
         0 0 10px rgba(0, 174, 255, 0.30),
         0 0 25px rgba(0, 174, 255, 0.12);
@@ -386,214 +242,105 @@ main {
     font-family: "Courier New", Courier, monospace;
 }
 
-
-/* =====================================================
-   BARRA SUPERIOR
-   ===================================================== */
-
 .pantalla-botones {
     width: 100%;
     height: 45px;
-
     display: flex;
-
     align-items: center;
-
     padding-left: 16px;
-
     background: #080d13;
-
     border-bottom: 1px solid #17212b;
-
     gap: 8px;
 }
 
 
-/* =====================================================
-   BOTÓN CERRAR
-   ===================================================== */
-
 .Cerrar {
     width: 12px;
     height: 12px;
-
     display: block;
-
     border-radius: 50%;
-
     background: #ff5f57;
-
     cursor: pointer;
 }
-
-
-/* =====================================================
-   BOTÓN MINIMIZAR
-   ===================================================== */
 
 .Minimizar {
     width: 12px;
     height: 12px;
-
     display: block;
-
     border-radius: 50%;
-
     background: #ffbd2e;
-
     cursor: pointer;
 }
-
-
-/* =====================================================
-   BOTÓN MAXIMIZAR
-   ===================================================== */
 
 .Maximizar {
     width: 12px;
     height: 12px;
-
     display: block;
-
     border-radius: 50%;
-
     background: #28c840;
-
     cursor: pointer;
 }
 
 
-/* =====================================================
-   TÍTULO DE LA TERMINAL
-   ===================================================== */
-
 .titulo {
     position: absolute;
-
     top: 10px;
     left: 50%;
-
     transform: translateX(-50%);
-
     color: #8d969f;
-
     font-family: "Courier New", Courier, monospace;
-
     font-size: 14px;
-
     white-space: nowrap;
 }
 
-
-/* =====================================================
-   CONTENIDO DE LA TERMINAL
-   ===================================================== */
-
 .pantalla-contenido {
     padding: 28px 25px 0;
-
     color: #ffffff;
-
     font-family: "Courier New", Courier, monospace;
-
     font-size: 16px;
-
     line-height: 1.65;
 }
-
-
-/* =====================================================
-   LÍNEAS
-   ===================================================== */
 
 .linea {
     padding-left: 25px;
-
     font-family: "Courier New", Courier, monospace;
-
     font-size: 16px;
-
     line-height: 1.65;
 }
 
-
-/* =====================================================
-   CONST
-   ===================================================== */
-
 .palabra {
     color: #b779ff;
-
     font-weight: bold;
 }
 
-
-/* =====================================================
-   VARIABLE
-   ===================================================== */
 
 .variable {
     color: #eeeeee;
 }
 
-
-/* =====================================================
-   SÍMBOLOS
-   ===================================================== */
-
 .simbolo {
     color: #d5d5d5;
 }
-
-
-/* =====================================================
-   LLAVES
-   ===================================================== */
 
 .llave {
     color: #d5d5d5;
 }
 
-
-/* =====================================================
-   PROPIEDADES
-   ===================================================== */
-
 .propiedad {
     color: #dddddd;
 }
-
-
-/* =====================================================
-   TEXTOS
-   ===================================================== */
 
 .texto {
     color: #38d996;
 }
 
-
-/* =====================================================
-   CORCHETES
-   ===================================================== */
-
 .corchete {
     color: #d5d5d5;
 }
 
-
-/* =====================================================
-   TRUE
-   ===================================================== */
-
 .boolean {
     color: #ff9d28;
 }
-
-
-/* =====================================================
-   RESPONSIVE
-   ===================================================== */
 
 @media (max-width: 1100px) {
 
@@ -663,4 +410,146 @@ main {
     .linea {
         font-size: 13px;
     }
+}
+
+.proyectos {
+    width: 1200px;
+    max-width: calc(100% - 80px);
+
+    margin: 0 auto;
+
+    padding: 90px 0 100px;
+}
+
+.proyectos-encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 35px;
+}
+
+
+.codigo-seccion {
+    color: #1DE9FF;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+
+.proyectos-encabezado h2 {
+    color: #FFFFFF;
+    font-size: 42px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+
+.cantidad-proyectos {
+    color: #687083;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 13px;
+}
+
+
+.proyectos-contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.proyecto {
+    background: #0a1019;
+    border: 1px solid #1b2b38;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.35s ease;
+    cursor: pointer;
+}
+
+
+.proyecto:hover {
+    transform: translateY(-6px);
+    border-color: #1DE9FF;
+    box-shadow:
+        0 10px 30px rgba(0, 174, 255, 0.15);
+}
+
+.proyecto-imagen {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: #080d13;
+}
+
+
+.proyecto-imagen img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+
+.proyecto:hover .proyecto-imagen img {
+    transform: scale(1.05);
+}
+
+.proyecto-informacion {
+    padding: 20px;
+}
+
+.proyecto-informacion h3 {
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+.proyecto-informacion p {
+    color: #8d969f;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+@media (max-width: 1000px) {
+
+    .proyectos {
+        width: 90%;
+    }
+
+    .proyectos-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .proyectos {
+        width: 90%;
+
+        padding-top: 60px;
+    }
+
+    .proyectos-encabezado {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .proyectos-encabezado h2 {
+        font-size: 35px;
+    }
+
+    .proyectos-contenedor {
+        grid-template-columns: 1fr;
+    }
+
 }

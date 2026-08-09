@@ -33,92 +33,243 @@
     </header>
 
     <main>
+
+    <!-- mi presentaccion -->
+
+    <div class="inicio">
         <div class="info">
-            <p class="welcome"> //Hola, soy <span> </span> </p>
-            <h1> Velveth <span> Chavez</span> </h1>
-            <p class="tag-role"> Estudiante de <span class="Carrera">Ingenieria en Ciencias de<br> Informacion y Ciencias de Computacion,<br></span> Universidad Mariano Galvez. </p>
+
+            <p class="welcome">
+                //Hola, soy
+            </p>
+            <h1>
+                Velveth
+                <span>Chavez</span>
+            </h1>
+
+            <p class="tag-role">
+                Estudiante de
+                <span class="Carrera">
+                    Ingenieria en Ciencias de<br>
+                    Informacion y Ciencias de Computacion,<br>
+                </span>
+                Universidad Mariano Galvez.
+            </p>
+
             <div class="action">
-                <button class="btnverproyecto">👩🏻‍💻Ver mis proyectos</button>
-                <button class="btncv">Descargar CV</button>
+
+                <button class="btnverproyecto">
+                    👩🏻‍💻 Ver mis proyectos
+                </button>
+
+                <button class="btncv">
+                    Descargar CV
+                </button>
+
             </div>
+
         </div>
 
-            <div class="pantalla">
 
-    <div class="pantalla-botones">
-        <span class="Cerrar"></span>
-        <span class="Minimizar"></span>
-        <span class="Maximizar"></span>
+        <!-- pantalla de codigo tipo java -->
+
+        <div class="pantalla">
+
+            <div class="pantalla-botones">
+                <span class="Cerrar"></span>
+                <span class="Minimizar"></span>
+                <span class="Maximizar"></span>
+            </div>
+
+            <div class="titulo">
+                ~/velveth - zsh
+            </div>
+
+            <div class="pantalla-contenido">
+
+                <div>
+                    <span class="palabra">const</span>
+                    <span class="variable">dev</span>
+                    <span class="simbolo">=</span>
+                    <span class="llave">{</span>
+                </div>
+
+                <div class="linea">
+                    <span class="propiedad">nombre:</span>
+                    <span class="texto">'Velveth Chavez'</span>
+                    <span class="simbolo">,</span>
+                </div>
+
+                <div class="linea">
+                    <span class="propiedad">rol:</span>
+                    <span class="texto">'estudiante'</span>
+                    <span class="simbolo">,</span>
+                </div>
+
+                <div class="linea">
+                    <span class="propiedad">Facultad:</span>
+                    <span class="texto">'Ingenieria en sistemas'</span>
+                    <span class="simbolo">,</span>
+                </div>
+
+                <div class="linea">
+                    <span class="propiedad">stack:</span>
+
+                    <span class="corchete">[</span>
+
+                    <span class="texto">'Java'</span>
+                    <span class="simbolo">,</span>
+
+                    <span class="texto">'Pascal'</span>
+                    <span class="simbolo">,</span>
+
+                    <span class="texto">'SQL'</span>
+
+                    <span class="corchete">]</span>
+
+                    <span class="simbolo">,</span>
+                </div>
+
+                <div class="linea">
+                    <span class="propiedad">aprendiendo:</span>
+                    <span class="texto">'Desarrollo Web'</span>
+                    <span class="simbolo">,</span>
+                </div>
+
+                <div class="linea">
+                    <span class="propiedad">disponible:</span>
+                    <span class="boolean">true</span>
+                </div>
+
+                <div class="linea">
+                    <span class="llave">}</span>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <div class="titulo">
-        ~/velveth - zsh
-    </div>
 
-    <div class="pantalla-contenido">
+    <!-- seccion proyectos -->
 
-        <div>
-            <span class="palabra">const</span>
-            <span class="variable">dev</span>
-            <span class="simbolo">=</span>
-            <span class="llave">{</span>
+    <section class="proyectos" id="proyectos">
+
+        <div class="proyectos-encabezado">
+
+            <div>
+
+                <p class="codigo-seccion">
+                    // 02_projects
+                </p>
+                <h2>
+                    Proyectos
+                </h2>
+            </div>
+
+            <span class="cantidad-proyectos">
+                03 proyectos
+            </span>
+
         </div>
 
-        <div class="linea">
-            <span class="propiedad">nombre:</span>
-            <span class="texto">'Velveth Chavez'</span>
-            <span class="simbolo">,</span>
+
+        <div class="proyectos-contenedor">
+
+            <!-- PROYECTO 1 -->
+
+            <article class="proyecto">
+
+                <div class="proyecto-imagen">
+
+                    <img
+                        src="imgProyecto1.png"
+                        alt="Proyecto 1"
+                    >
+
+                </div>
+
+                <div class="proyecto-informacion">
+
+                    <h3>
+                        Sistema de gestión de polideportivo
+                    </h3>
+
+                    <p>
+                        Sistema desarrollado para administrar
+                        información y facilitar la gestión de
+                        diferentes procesos.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROYECTO 2 -->
+
+            <article class="proyecto">
+
+                <div class="proyecto-imagen">
+
+                    <img
+                        src="imgProyecto2.png"
+                        alt="Proyecto 2"
+                    >
+
+                </div>
+
+                <div class="proyecto-informacion">
+
+                    <h3>
+                        Página web - Venta de productos
+                    </h3>
+
+                    <p>
+                        Diseñada para visualizar los productos
+                        disponibles con diferentes tallas, tipos,
+                        precios y más.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROYECTO 3 -->
+
+            <article class="proyecto">
+
+                <div class="proyecto-imagen">
+
+                    <img
+                        src="imgProyecto3.png"
+                        alt="Proyecto 3"
+                    >
+
+                </div>
+
+                <div class="proyecto-informacion">
+
+                    <h3>
+                        Página web - Estética Canina VIP
+                    </h3>
+
+                    <p>
+                        Diseñada para visualizar los servicios,
+                        productos, precios, intalaciones y más.
+                    </p>
+
+                </div>
+
+            </article>
+
         </div>
 
-        <div class="linea">
-            <span class="propiedad">rol:</span>
-            <span class="texto">'estudiante'</span>
-            <span class="simbolo">,</span>
-        </div>
+    </section>
 
-        <div class="linea">
-            <span class="propiedad">Facultad:</span>
-            <span class="texto">'Ingenieria en sistemas'</span>
-            <span class="simbolo">,</span>
-        </div>
-
-        <div class="linea">
-            <span class="propiedad">stack:</span>
-            <span class="corchete">[</span>
-
-            <span class="texto">'Java'</span>
-            <span class="simbolo">,</span>
-
-            <span class="texto">'Pascal'</span>
-            <span class="simbolo">,</span>
-
-            <span class="texto">'SQL'</span>
-
-            <span class="corchete">]</span>
-            <span class="simbolo">,</span>
-        </div>
-
-        <div class="linea">
-            <span class="propiedad">aprendiendo:</span>
-            <span class="texto">'Desarrollo Web'</span>
-            <span class="simbolo">,</span>
-        </div>
-
-        <div class="linea">
-            <span class="propiedad">disponible:</span>
-            <span class="boolean">true</span>
-        </div>
-
-        <div class="linea">
-            <span class="llave">}</span>
-        </div>
-
-    </div>
-
-</div>
-        
-
-    </main>
+</main>
 
 
 </div>
