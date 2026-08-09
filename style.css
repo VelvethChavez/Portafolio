@@ -1,0 +1,666 @@
+/* =====================================================
+   CONFIGURACIÓN GENERAL
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #101729;
+    color: white;
+}
+
+
+/* =====================================================
+   CONTENEDOR PRINCIPAL
+   ===================================================== */
+
+.contenedor {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            #050613,
+            #0d121f,
+            #1C2541
+        ),
+        url(imgPrueba.png);
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+header {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 25px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* =====================================================
+   LOGO
+   ===================================================== */
+
+.logo {
+    color: #1DE9FF;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   PARTE DERECHA DEL NAV
+   ===================================================== */
+
+.nav-derecha {
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+}
+
+
+/* =====================================================
+   MENÚ
+   ===================================================== */
+
+.menu {
+    display: flex;
+
+    list-style: none;
+
+    gap: 35px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #1DE9FF;
+}
+
+
+/* =====================================================
+   BOTÓN CONTACTO
+   ===================================================== */
+
+.btn-contacto {
+    text-decoration: none;
+
+    color: #1DE9FF;
+
+    border: 1px solid #1DE9FF;
+
+    padding: 10px 20px;
+
+    border-radius: 30px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-contacto:hover {
+    background: #1DE9FF;
+
+    color: #0B0F1A;
+}
+
+
+/* =====================================================
+   MAIN
+   ===================================================== */
+
+main {
+    width: 1200px;
+    max-width: calc(100% - 80px);
+
+    margin: 0 auto;
+
+    min-height: calc(100vh - 90px);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+
+/* =====================================================
+   INFORMACIÓN PERSONAL
+   ===================================================== */
+
+.info {
+    width: 430px;
+    flex-shrink: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 22px;
+}
+
+
+/* =====================================================
+   TEXTO "HOLA SOY"
+   ===================================================== */
+
+.info .welcome {
+    color: #ffffff;
+
+    width: fit-content;
+
+    font-size: 28px;
+}
+
+
+/* =====================================================
+   NOMBRE
+   ===================================================== */
+
+.info h1 {
+    font-size: 85px;
+
+    line-height: 1.05;
+
+    color: #ffffff;
+}
+
+.info h1 span {
+    display: block;
+
+    background:
+        linear-gradient(
+            90deg,
+            #22D3EE,
+            #60A5FA,
+            #A855F7
+        );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+}
+
+
+/* =====================================================
+   DESCRIPCIÓN
+   ===================================================== */
+
+.tag-role {
+    color: #FFFFFF;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    max-width: 350px;
+}
+
+
+/* =====================================================
+   CARRERA
+   ===================================================== */
+
+.Carrera {
+    color: #1DE9FF;
+}
+
+
+/* =====================================================
+   BOTONES
+   ===================================================== */
+
+.action {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* =====================================================
+   BOTÓN VER PROYECTOS
+   ===================================================== */
+
+.btnverproyecto {
+    background:
+        linear-gradient(
+            90deg,
+            #155b66,
+            #4974aa,
+            #3c78da
+        );
+
+    color: #FFFFFF;
+
+    border: none;
+
+    padding: 14px 14px;
+
+    border-radius: 50px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.35s ease;
+
+    box-shadow:
+        0 8px 15px rgba(34, 211, 238, 0.35);
+}
+
+.btnverproyecto:hover {
+    transform: translateY(-4px);
+
+    background:
+        linear-gradient(
+            90deg,
+            #3B82F6,
+            #60A5FA,
+            #22D3EE
+        );
+
+    box-shadow:
+        0 12px 35px rgba(34, 211, 238, 0.55);
+}
+
+.btnverproyecto:active {
+    transform: scale(0.97);
+}
+
+
+/* =====================================================
+   BOTÓN CV
+   ===================================================== */
+
+.btncv {
+    text-decoration: none;
+
+    background-color: transparent;
+
+    color: #FFFFFF;
+
+    border: 1px solid #FFFFFF;
+
+    padding: 10px 20px;
+
+    border-radius: 30px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btncv:hover {
+    color: #1C2541;
+
+    transform: translateY(-4px);
+
+    background: #ffffff;
+
+    box-shadow:
+        0 12px 20px rgba(181, 235, 243, 0.55);
+}
+
+.btncv:active {
+    transform: scale(0.97);
+}
+
+
+/* =====================================================
+   PANTALLA DE CÓDIGO
+   ===================================================== */
+
+.pantalla {
+    position: relative;
+
+    width: 500px;
+    height: 325px;
+
+    flex-shrink: 1;
+
+    background: #080d13;
+
+    border: 1px solid #12354b;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 0 10px rgba(0, 174, 255, 0.30),
+        0 0 25px rgba(0, 174, 255, 0.12);
+
+    font-family: "Courier New", Courier, monospace;
+}
+
+
+/* =====================================================
+   BARRA SUPERIOR
+   ===================================================== */
+
+.pantalla-botones {
+    width: 100%;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-left: 16px;
+
+    background: #080d13;
+
+    border-bottom: 1px solid #17212b;
+
+    gap: 8px;
+}
+
+
+/* =====================================================
+   BOTÓN CERRAR
+   ===================================================== */
+
+.Cerrar {
+    width: 12px;
+    height: 12px;
+
+    display: block;
+
+    border-radius: 50%;
+
+    background: #ff5f57;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   BOTÓN MINIMIZAR
+   ===================================================== */
+
+.Minimizar {
+    width: 12px;
+    height: 12px;
+
+    display: block;
+
+    border-radius: 50%;
+
+    background: #ffbd2e;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   BOTÓN MAXIMIZAR
+   ===================================================== */
+
+.Maximizar {
+    width: 12px;
+    height: 12px;
+
+    display: block;
+
+    border-radius: 50%;
+
+    background: #28c840;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   TÍTULO DE LA TERMINAL
+   ===================================================== */
+
+.titulo {
+    position: absolute;
+
+    top: 10px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #8d969f;
+
+    font-family: "Courier New", Courier, monospace;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   CONTENIDO DE LA TERMINAL
+   ===================================================== */
+
+.pantalla-contenido {
+    padding: 28px 25px 0;
+
+    color: #ffffff;
+
+    font-family: "Courier New", Courier, monospace;
+
+    font-size: 16px;
+
+    line-height: 1.65;
+}
+
+
+/* =====================================================
+   LÍNEAS
+   ===================================================== */
+
+.linea {
+    padding-left: 25px;
+
+    font-family: "Courier New", Courier, monospace;
+
+    font-size: 16px;
+
+    line-height: 1.65;
+}
+
+
+/* =====================================================
+   CONST
+   ===================================================== */
+
+.palabra {
+    color: #b779ff;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   VARIABLE
+   ===================================================== */
+
+.variable {
+    color: #eeeeee;
+}
+
+
+/* =====================================================
+   SÍMBOLOS
+   ===================================================== */
+
+.simbolo {
+    color: #d5d5d5;
+}
+
+
+/* =====================================================
+   LLAVES
+   ===================================================== */
+
+.llave {
+    color: #d5d5d5;
+}
+
+
+/* =====================================================
+   PROPIEDADES
+   ===================================================== */
+
+.propiedad {
+    color: #dddddd;
+}
+
+
+/* =====================================================
+   TEXTOS
+   ===================================================== */
+
+.texto {
+    color: #38d996;
+}
+
+
+/* =====================================================
+   CORCHETES
+   ===================================================== */
+
+.corchete {
+    color: #d5d5d5;
+}
+
+
+/* =====================================================
+   TRUE
+   ===================================================== */
+
+.boolean {
+    color: #ff9d28;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 1100px) {
+
+    main {
+        width: 90%;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        padding: 50px 0;
+    }
+
+    .info {
+        width: 100%;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .pantalla {
+        width: 100%;
+
+        max-width: 690px;
+    }
+}
+
+
+@media (max-width: 750px) {
+
+    header {
+        padding: 20px;
+    }
+
+    .nav-derecha {
+        gap: 15px;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    .btn-contacto {
+        padding: 8px 12px;
+
+        font-size: 13px;
+    }
+
+    .info h1 {
+        font-size: 50px;
+    }
+
+    .pantalla {
+        width: 100%;
+
+        height: auto;
+
+        min-height: 380px;
+    }
+
+    .pantalla-contenido,
+    .linea {
+        font-size: 13px;
+    }
+}
