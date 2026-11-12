@@ -3,271 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <meta name="description" content="Portafolio de Velveth Chavez, estudiante de Ingeniería en Ciencias de la Información y Ciencias de la Computación.">
+    <title>Portafolio | Velveth Chavez</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="contenedor">
-
-    <header>
-
-        <nav>
-
-            <h2 class="logo">velveth.chavez</h2>
+    <!-- ===================== MENÚ DE NAVEGACIÓN ===================== -->
+    <header class="encabezado">
+        <nav class="navegacion contenedor" aria-label="Menú principal">
+            <a class="logo" href="#inicio">velveth.chavez</a>
 
             <div class="nav-derecha">
-
                 <ul class="menu">
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="#">Sobre mí</a></li>
-                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <!-- Sustituir por la dirección del perfil personal de GitHub. -->
+                    <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
                 </ul>
-
-                <a href="#" class="btn-contacto">./contacto</a>
-
+                <a class="btn-contacto" href="#contacto">./contacto</a>
             </div>
-
         </nav>
-
     </header>
 
     <main>
-
-    <!-- mi presentaccion -->
-
-    <div class="inicio">
-        <div class="info">
-
-            <p class="welcome">
-                //Hola, soy
-            </p>
-            <h1>
-                Velveth
-                <span>Chavez</span>
-            </h1>
-
-            <p class="tag-role">
-                Estudiante de
-                <span class="Carrera">
-                    Ingenieria en Ciencias de<br>
-                    Informacion y Ciencias de Computacion,<br>
-                </span>
-                Universidad Mariano Galvez.
-            </p>
-
-            <div class="action">
-
-                <button class="btnverproyecto">
-                    👩🏻‍💻 Ver mis proyectos
-                </button>
-
-                <button class="btncv">
-                    Descargar CV
-                </button>
-
-            </div>
-
-        </div>
-
-
-        <!-- pantalla de codigo tipo java -->
-
-        <div class="pantalla">
-
-            <div class="pantalla-botones">
-                <span class="Cerrar"></span>
-                <span class="Minimizar"></span>
-                <span class="Maximizar"></span>
-            </div>
-
-            <div class="titulo">
-                ~/velveth - zsh
-            </div>
-
-            <div class="pantalla-contenido">
-
-                <div>
-                    <span class="palabra">const</span>
-                    <span class="variable">dev</span>
-                    <span class="simbolo">=</span>
-                    <span class="llave">{</span>
-                </div>
-
-                <div class="linea">
-                    <span class="propiedad">nombre:</span>
-                    <span class="texto">'Velveth Chavez'</span>
-                    <span class="simbolo">,</span>
-                </div>
-
-                <div class="linea">
-                    <span class="propiedad">rol:</span>
-                    <span class="texto">'estudiante'</span>
-                    <span class="simbolo">,</span>
-                </div>
-
-                <div class="linea">
-                    <span class="propiedad">Facultad:</span>
-                    <span class="texto">'Ingenieria en sistemas'</span>
-                    <span class="simbolo">,</span>
-                </div>
-
-                <div class="linea">
-                    <span class="propiedad">stack:</span>
-
-                    <span class="corchete">[</span>
-
-                    <span class="texto">'Java'</span>
-                    <span class="simbolo">,</span>
-
-                    <span class="texto">'Pascal'</span>
-                    <span class="simbolo">,</span>
-
-                    <span class="texto">'SQL'</span>
-
-                    <span class="corchete">]</span>
-
-                    <span class="simbolo">,</span>
-                </div>
-
-                <div class="linea">
-                    <span class="propiedad">aprendiendo:</span>
-                    <span class="texto">'Desarrollo Web'</span>
-                    <span class="simbolo">,</span>
-                </div>
-
-                <div class="linea">
-                    <span class="propiedad">disponible:</span>
-                    <span class="boolean">true</span>
-                </div>
-
-                <div class="linea">
-                    <span class="llave">}</span>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- seccion proyectos -->
-
-    <section class="proyectos" id="proyectos">
-
-        <div class="proyectos-encabezado">
-
-            <div>
-
-                <p class="codigo-seccion">
-                    // 02_projects
-                </p>
-                <h2>
-                    Proyectos
-                </h2>
-            </div>
-
-            <span class="cantidad-proyectos">
-                03 proyectos
-            </span>
-
-        </div>
-
-
-        <div class="proyectos-contenedor">
-
-            <!-- PROYECTO 1 -->
-
-            <article class="proyecto">
-
-                <div class="proyecto-imagen">
-
-                    <img
-                        src="imgProyecto1.png"
-                        alt="Proyecto 1"
-                    >
-
-                </div>
-
-                <div class="proyecto-informacion">
-
-                    <h3>
-                        Sistema de gestión de polideportivo
-                    </h3>
-
-                    <p>
-                        Sistema desarrollado para administrar información y facilitar la gestión de diferentes procesos.
+        <!-- ===================== 01. PRESENTACIÓN ===================== -->
+        <section class="seccion-inicio fondo-cuadricula" id="inicio">
+            <div class="inicio contenedor">
+                <div class="info">
+                    <p class="welcome">// Hola, soy</p>
+                    <h1>Velveth <span>Chavez</span></h1>
+                    <p class="tag-role">
+                        Estudiante de <span class="carrera">Ingeniería en Ciencias de<br class="salto-desktop">
+                        información y Ciencias de la Computación,</span><br class="salto-desktop">
+                        Universidad Mariano Gálvez de Guatemala.
                     </p>
-
+                    <div class="acciones">
+                        <a href="#proyectos" class="btn-ver-proyectos">Ver proyectos <span aria-hidden="true">↓</span></a>
+                        <a href="#contacto" class="btn-secundario"><span aria-hidden="true">✉</span> Contacto</a>
+                    </div>
                 </div>
 
-            </article>
-
-
-            <!-- PROYECTO 2 -->
-
-            <article class="proyecto">
-
-                <div class="proyecto-imagen">
-
-                    <img
-                        src="imgProyecto2.png"
-                        alt="Proyecto 2"
-                    >
-
+                <!-- Ventana decorativa con código, como en el PDF. -->
+                <div class="pantalla" aria-label="Presentación de Velveth en formato de código">
+                    <div class="pantalla-superior">
+                        <div class="pantalla-botones" aria-hidden="true">
+                            <span class="cerrar"></span>
+                            <span class="minimizar"></span>
+                            <span class="maximizar"></span>
+                        </div>
+                        <span class="titulo-terminal">~/velveth - zsh</span>
+                    </div>
+                    <div class="pantalla-contenido">
+                        <div><span class="palabra">const</span> <span class="variable">dev</span> = {</div>
+                        <div class="linea">nombre: <span class="texto">'Velveth Chavez'</span>,</div>
+                        <div class="linea">rol: <span class="texto">'estudiante'</span>,</div>
+                        <div class="linea">Facultad: <span class="texto">'Ingeniería en sistemas'</span>,</div>
+                        <div class="linea">stack: [<span class="texto">'Java'</span>, <span class="texto">'Pascal'</span>, <span class="texto">'SQL'</span>],</div>
+                        <div class="linea">aprendiendo: <span class="texto">'Desarrollo Web'</span>,</div>
+                        <div class="linea">disponible: <span class="boolean">true</span>,</div>
+                        <div>}</div>
+                    </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="proyecto-informacion">
+        <!-- ===================== 02. PROYECTOS ===================== -->
+        <section class="proyectos seccion" id="proyectos">
+            <div class="contenedor">
+                <p class="codigo-seccion">// proyectos</p>
+                <h2 class="titulo-seccion">Proyectos</h2>
 
-                    <h3>
-                        Página web - Venta de productos
-                    </h3>
+                <div class="proyectos-contenedor">
+                    <article class="proyecto">
+                        <div class="proyecto-imagen">
+                            <img src="img/imgProyecto1.png" alt="Interfaz del sistema de polideportivo" loading="lazy">
+                        </div>
+                        <div class="proyecto-informacion">
+                            <h3>Sistema de polideportivo</h3>
+                            <p>Sistema con base de datos para agregar campeonatos, control de horarios, canchas...</p>
 
-                    <p>
-                        Diseñada para visualizar los productos disponibles con diferentes tallas, tipos, precios y más.
-                    </p>
+                        </div>
+                    </article>
 
+                    <article class="proyecto">
+                        <div class="proyecto-imagen">
+                            <img src="img/imgProyecto2.png" alt="Página web de venta de productos deportivos" loading="lazy">
+                        </div>
+                        <div class="proyecto-informacion">
+                            <h3>Plataforma de venta de productos deportivos</h3>
+                            <p>Página web para visualizar los productos disponibles con diferentes tallas y precios.</p>
+                        </div>
+                    </article>
+
+                    <article class="proyecto">
+                        <div class="proyecto-imagen">
+                            <img src="img/imgProyecto3.png" alt="Página web de estética canina VIP" loading="lazy">
+                        </div>
+                        <div class="proyecto-informacion">
+                            <h3>Plataforma de estética canina</h3>
+                            <p>Página web para visualizar los servicios, productos, precios, instalaciones y más.</p>
+                        </div>
+                    </article>
                 </div>
+            </div>
+        </section>
 
-            </article>
+        <!-- ===================== 03. SOBRE MÍ ===================== -->
+        <section class="sobre-mi seccion" id="sobre-mi">
+            <div class="contenedor">
+                <p class="codigo-seccion">// 03</p>
+                <h2 class="titulo-seccion">Sobre <span class="degradado">mí</span></h2>
 
-
-            <!-- PROYECTO 3 -->
-
-            <article class="proyecto">
-
-                <div class="proyecto-imagen">
-
-                    <img
-                        src="imgProyecto3.png"
-                        alt="Proyecto 3"
-                    >
-
+                <div class="sobre-mi-contenido">
+                    <img class="foto-perfil" src="img/MiFoto.jpeg" alt="Fotografía de Velveth Chavez" loading="eager">
+                    <div class="sobre-mi-texto">
+                        <p>Soy estudiante de <span>Ingeniería en Sistemas</span>, apasionada por el desarrollo de software y la creación de soluciones tecnológicas que resuelvan problemas reales. Me interesa el desarrollo de aplicaciones de escritorio y web, así como el diseño y administración de bases de datos. He trabajado en proyectos utilizando Java, Pascal y SQL, fortaleciendo mis habilidades en programación, análisis de sistemas y modelado de bases de datos.</p>
+                        <p>Me caracterizo por ser una persona responsable, analítica y comprometida con el aprendizaje continuo, siempre buscando mejorar mis conocimientos y adaptarme a las nuevas tecnologías.</p>
+                        <p>Mi objetivo es crecer profesionalmente como desarrolladora de software y aportar soluciones innovadoras en cada proyecto en el que participe.</p>
+                    </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="proyecto-informacion">
+        <!-- ===================== 04. CONTACTO ===================== -->
+        <section class="contacto seccion fondo-cuadricula" id="contacto">
+            <div class="contenedor">
+                <p class="codigo-seccion">// 04 Contacto</p>
+                <h2 class="titulo-seccion">Hablemos</h2>
+                <p class="descripcion-contacto">¿Tienes un proyecto, una oportunidad o solo quieres saludar? Escríbeme.</p>
 
-                    <h3>
-                        Página web - Estética Canina VIP
-                    </h3>
+                <div class="contacto-contenido">
+                    <div class="datos-contacto">
+                        <a class="contacto-tarjeta" href="mailto:saraimejia1605@gmail.com">
+                            <span class="contacto-icono icono-correo" aria-hidden="true">✉</span>
+                            <span class="contacto-texto"><small>email</small><strong>saraimejia1605@gmail.com</strong></span>
+                        </a>
+                        <!-- Para activar la descarga, colocar un archivo real llamado CV.pdf junto a index.html. -->
+                        <a class="contacto-tarjeta" href="CV.pdf" download>
+                            <span class="contacto-icono icono-cv" aria-hidden="true">⇩</span>
+                            <span class="contacto-texto"><small>currículum</small><strong>Descargar CV (PDF)</strong></span>
+                        </a>
+                        <div class="contacto-tarjeta disponibilidad">
+                            <span class="contacto-texto"><small>disponibilidad</small><strong><span class="punto-verde" aria-hidden="true"></span> Abierta a prácticas y proyectos</strong></span>
+                        </div>
+                    </div>
 
-                    <p>
-                        Diseñada para visualizar los servicios, productos, precios, intalaciones y más.
-                    </p>
+                    <!-- FormSubmit envía el mensaje al correo indicado sin usar el correo del visitante.
+                         El correo destinatario debe activarse desde un mensaje de confirmación. -->
+                    <form class="formulario-contacto"
+                          id="formulario-contacto"
+                          action="https://formsubmit.co/saraimejia1605@gmail.com"
+                          method="POST">
+                        <input type="hidden" name="_subject" value="Nuevo mensaje desde el portafolio de Velveth">
+                        <input type="hidden" name="_template" value="table">
+                        <!-- Campo antispam: debe permanecer vacío. -->
+                        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 
+                        <label for="correo">tu_email</label>
+                        <input type="email" id="correo" name="email" placeholder="nombre@correo.com" autocomplete="email" maxlength="254" required>
+
+                        <label for="mensaje">mensaje</label>
+                        <textarea id="mensaje" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..." maxlength="5000" required></textarea>
+
+                        <button type="submit" class="btn-enviar">Enviar mensaje <span aria-hidden="true">➤</span></button>
+                        <p class="aviso-formulario">Al enviar, el mensaje será procesado por FormSubmit para entregarlo a mi correo.</p>
+                    </form>
                 </div>
+            </div>
+        </section>
+    </main>
 
-            </article>
-
-        </div>
-
-    </section>
-
-</main>
-
-
-</div>
 
 </body>
 </html>
